@@ -1,0 +1,39 @@
+# --- macOS System Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX/
+
+# --- Python / AI Engineering ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+venv/
+env/
+bin/
+lib/
+develop-eggs/
+dist/
+eggs/
+build/
+
+# --- IDEs (VS Code & Cursor) ---
+.vscode/
+.history/
+*.code-workspace
+
+# --- Node.js (Si usas para tus Apps Script o Frontend) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Logs y Temporales ---
+*.log
+tmp/
+temp/

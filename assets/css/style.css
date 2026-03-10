@@ -1,0 +1,153 @@
+/* Reset clásico para el body y los elementos generales */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Fundamental para que el padding no afecte el ancho total */
+}
+
+body {
+  min-height: 100vh; /* Asegura que el body ocupe toda la pantalla */
+  line-height: 1.5;  /* Mejora la legibilidad del texto */
+  -webkit-font-smoothing: antialiased; /* Suaviza las fuentes en Mac/iOS */
+  font-family: sans-serif; /* Una fuente base limpia */
+  background-color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+   margin: 35px;
+   color: white;
+}
+
+/* Estilo uniforme para todos los elementos de control */
+.app-box input, 
+.app-box select, 
+.app-box button {
+    width: 90%;          /* Todos al mismo ancho relativo */
+    max-width: 250px;    /* Para que no toquen los bordes de la caja azul */
+    padding: 12px;       /* Mismo grosor para todos */
+    margin: 8px 0;       /* Espaciado vertical constante */
+    border-radius: 8px;  /* Esquinas iguales */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.app-box input{
+    text-align: right;
+    padding-right: 30;
+}
+
+.app-box input, 
+.app-box select {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.app-box input:focus, 
+.app-box select:focus {
+    background-color: #fff;
+    transform: scale(1.02); /* Efecto de "pop" al clickear */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilo específico para el botón para que destaque */
+#buscarApi {
+    background-color: #1a1a1a;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#buscarApi:hover {
+    background-color: #000;
+    transform: translateY(-2px); /* Se eleva al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#buscarApi:active {
+    transform: translateY(0); /* Efecto de click */
+}
+
+/* Aplicación principal*/
+.app-box{
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #3eb0f9 0%, #2a90d6 100%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Brillo sutil en el borde */
+    padding: 30px; /* Más aire interno */
+    border-radius: 12px;
+}
+
+.caja:hover {
+  transform: translateY(-5px); /* Se eleva un poquito */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Caja Select */
+.custom-select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.custom-select:focus {
+    border-color: #3eb0f9; 
+    box-shadow: 0 0 5px rgba(62, 176, 249, 0.5);
+}
+
+.contenedor-grafico {
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    display: none; /* Se muestra al realizar una búsqueda */
+    margin-bottom: 30px;
+}
+
+.mensaje-error {
+    color: #ffffff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-div {
+    animation: fadeInUp 0.6s ease-out;
+}
