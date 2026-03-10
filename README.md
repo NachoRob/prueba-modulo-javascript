@@ -4,6 +4,11 @@ Una aplicación web moderna y minimalista para la conversión de divisas
 en tiempo real. Este proyecto forma parte de mi stack de desarrollo como
 **Software Engineer**, enfocado en crear interfaces limpias y funcionales.
 
+## 🚀 Demo en Vivo
+
+Puedes ver el proyecto funcionando aquí:  
+[Ver Prueba Módulo JavaScript](https://nachorob.github.io/prueba-modulo-javascript/)
+
 ## ✨ Características
 
 -   **Conversión en Tiempo Real:** Conexión con APIs externas para
