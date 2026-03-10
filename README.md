@@ -2,13 +2,7 @@
 
 Una aplicación web moderna y minimalista para la conversión de divisas
 en tiempo real. Este proyecto forma parte de mi stack de desarrollo como
-**AI Engineer**, enfocado en crear interfaces limpias y funcionales.
-
-## 🎨 Vista Previa
-
-> \[!TIP\] La interfaz utiliza un esquema de colores "Midnight & Azure"
-> con un diseño optimizado para legibilidad y experiencia de usuario
-> (UX).
+**Software Engineer**, enfocado en crear interfaces limpias y funcionales.
 
 ## ✨ Características
 
